@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div>
+      <h1>Aplicación de Calculadora</h1>
+      <form id="formulario">
+        <div>
+          <label for="operandoA">Operando A:</label>
+          <input
+            type="number"
+            placeholder="Escribe el operando A"
+            id="operandoA"
+          />
+        </div>
+        <div>
+          <label for="operandoB">Operando B:</label>
+          <input
+            type="number"
+            placeholder="Escribe el operando B"
+            id="operandoB"
+          />
+        </div>
+      </form>
+      <!--Sacamos duera del formulario par auqe no se ejecute POST-->
+      <button type="submit" onclick="sumar()">Sumar</button>
+      <button type="submit" onclick="restar()">Restar</button>
+      <button type="submit" onclick="multiplicar()">Multiplicar</button>
+      <button type="submit" onclick="dividir()">Dividir</button>
+      <br /><br />
+      <div id="resultado"></div>
+    </div>
+    <script src="JS/app.js"></script>
+  </body>
+</html>
