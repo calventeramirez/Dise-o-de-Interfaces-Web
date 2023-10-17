@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+/* Index */
+body{
+    font-family: Roboto;
+    font-size: 400;
+}
+
+.index-body{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;   
+}
+
+/* Header */
+.header{
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.social{
+    background-color: #20E674;
+    width: 100%;
+    height: 50px; 
+}
+
+.socials-icons{
+    width: 250px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: self-end;
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-left: 70%;
+}
+
+.socials-icons a{
+    color: white;
+    font-size: 28px;
+}
+
+.socials-icons a:hover {
+    color: #41A68E;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+
+.nav-logo{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img{
+    height: 10%;
+    width: 10%;
+    margin:10px 0;
+    display: inline-block;
+}
+
+.nav-link{
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    margin-right: 130px;
+    margin-top: 20px;
+}
+
+.nav-link a{
+    text-decoration: underline;
+    color: black;
+}
+
+/*Main index*/
+
+.index-main{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100%;
+    background-image: url('../img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-container{
+    display: grid;
+    grid-column: 2;
+    justify-content: center;
+    text-align: center;
+    height: 350px;
+    margin-top: 80px;
+}
+
+.main-container__text{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 8px;
+}
+
+.main-container__link{
+    background-color: #20E674;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    height: 45px;
+}
+
+.main-container__link:hover{
+    background-color: #41A68E;
+}
+
+/*Pagina de Proyectos*/
+.proyectoPrincipal-section{
+    background-color: #41A68E;
+}
+.proyectoPrincipal-content{
+    padding: 10px 80px 40px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+}
+
+.proyectoPrincipal-content img{
+    grid-column: 1; /*Imagen en la columna 1*/
+    width: 85%;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.proyectoPrincipal-info {
+    grid-column: 2;/*texto en la columna 2*/
+}
+
+.proyectoPrincipal-info h2{
+    margin-bottom: 5%;
+}
+
+.proyectoPrincipal-info p{
+    margin-bottom: 10%;
+}
+
+.proyectos-btn{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 15px 20px;
+    font-size: 14px;
+    margin-bottom: 5%;
+}
+
+/*Sections de los proyectos individuales*/
+.proyectos-section{
+    padding: 10px 80px 40px;
+}
+
+.proyectos-section h3{
+    border-bottom: 1px solid black;
+}
+
+.proyectos-book{
+    display: inline-block;
+    max-width:  32%;
+    padding: 10px;
+    margin-bottom: 10%;
+}
+
+.proyectos-book img{
+    width: 100%; /*Para que la foto se vea entera en el hueco*/
+}
+
+.proyectos-book h4{
+    margin: 5%;
+}
+
+.proyectos-book p{
+    margin-bottom: 15%;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    height: 80%;
+    background-color: #20E674;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    color: black;
+    text-align: center;
+}
