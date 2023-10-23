@@ -136,6 +136,18 @@ nav{
     transform: scale(1);
 }
 
+table button{
+    cursor: pointer;
+    background-color: #BA5B4C;
+    border-radius: 10%;
+}
+
+table button:hover{
+    background-color: #51A57F;
+    color: white;
+    transform: translateY(0.5em);
+}
+
 /*Ciudades*/
 
 #ciudad li{
