@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+
+.header{
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+nav{
+    background-color: #FA4528;
+}
+
+/*Informacion*/
+.informacion-section{
+    padding-left: 0%;
+    margin-bottom: 2%;
+}
+
+.informacion-content{
+    background-color: #D1E7DD;
+    margin-top: 1%;
+    padding-top: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+}
+
+.informacion-content img{
+    grid-column: 1; /*Imagen en la columna 1*/
+    width: 50%;
+    display: inline-block;
+    margin-left: 20%;
+    margin-bottom: 10%;
+    border-radius: 30%;
+}
+
+.informacion-info{
+    grid-column: 2;/*texto en la columna 2*/
+}
+
+.informacion-content h3{
+    margin-bottom: 5%;
+}
+
+.informacion-info p{
+    margin-bottom: 10%;
+}
+
+
+/*Aficiones*/
+.aficiones{
+    margin-bottom: 10%;
+}
+
+#ea{ 
+    width: 100%;
+    height: 100%;
+    border-radius: 60%;
+}
+
+#ea:hover{
+    transform: scale(1.07);
+    transition: transform 0.25s ease-in-out;
+}
+
+#ea:not(:hover){
+    transform: scale(1);
+}
+
+#valorant{
+    width: 100%;
+    height: 100%;
+    border-radius: 60%;
+}
+
+#valorant:hover{
+    transform: scale(1.07);
+    transition: transform 0.25s ease-in-out;
+}
+
+#valorant:not(:hover){
+    transform: scale(1);
+}
+
+#libro{
+    width: 100%;
+    height: 100%;
+    border-radius: 60%;
+}
+
+#libro:hover{
+    transform: scale(1.07);
+    transition: transform 0.25s ease-in-out;
+}
+
+#libro:not(:hover){
+    transform: scale(1);
+}
+
+#f1{
+    width: 100%;
+    height: 100%;
+    border-radius: 60%;
+}
+
+#f1:hover{
+    transform: scale(1.07);
+    transition: transform 0.25s ease-in-out;
+}
+
+#f1:not(:hover){
+    transform: scale(1);
+}
+
+#futbol{
+    width: 100%;
+    height: 100%;
+    border-radius: 60%;
+}
+
+#futbol:hover{
+    transform: scale(1.07);
+    transition: transform 0.25s ease-in-out;
+}
+
+#futbol:not(:hover){
+    transform: scale(1);
+}
+
+/*Ciudades*/
+
+#ciudad li{
+    list-style: none;
+    display: inline;
+    margin-right: 5%;
+}
+
+#ciudad li a{
+    text-decoration: none;
+    color: black;
+}
+
+#ciudad li a:hover{
+    background-color: #51A57F;
+    color: white;
+}
+
+/*Enlaces de interes*/
+
+.enlacesInteres a{
+    display: inline-flex;
+    text-decoration: none;
+    color: #51A57F;
+    font-size: 28px;
+    justify-content: space-between;
+    padding-left: 5%; 
+}
+
+.enlacesInteres a:hover{
+    color: #477052;
+}
+
+/*Galeria*/
+
+.book{
+    display: inline-block;
+    vertical-align: top;
+    max-width: 32%;
+    padding: 10px;
+    margin-bottom: 10%;;
+}
+
+.book img{
+    width: 100%;
+}
+
+.book img:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+}
+
+.book img:not(:hover){
+    transform: scale(1);
+}
+
+/*Informacion adicional*/
+#infoAdicional ul li{
+    list-style: none;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    height: 80%;
+    background-color: #FA4528;
+    border-top: 35px solid #c40212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+footer p{
+    color: black;
+    text-align: center;
+}

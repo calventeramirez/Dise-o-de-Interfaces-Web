@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es-es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/estilos.css" />
+    <!-- <link rel="stylesheet" href="CSS/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <!-- <div class = "container"> -->
+        <nav class="navbar navbard-expand-lg" data-bs-theme="dark">
+            <a href="#info" class="nav-link">Información sobre mí</a>
+            <a href="#aficiones" class="nav-link">Aficiones</a>
+            <a href="#ciudad" class="nav-link">Ciudades que he visitado</a>
+            <a href="#enlacesInteres" class="nav-link">Enlaces a sitios de interes</a>
+            <a href="#actividadReciente" class="nav-link">Actividades recientes</a>
+            <a href="#imagenes" class="nav-link">Imagenes</a>
+            <a href="#infoAdicional" class="nav-link">Información adicional</a>
+        </nav>
+      <!-- </div> -->
+    </header>
+    <main>
+      <section id="info" class="informacion-section">
+        <div class="container informacion-content">
+          <h3><i class="fa-solid fa-user fa-spin-pulse"></i> Información sobre mí</h3>
+          <img src="img/foto.jpg" alt="Mi foto" />
+          <div class="inforacion-info">
+            <p>
+              Me llamo Pablo Jesús Calvente Ramírez. Soy una persona
+              <b>afable</b>, <b>seria</b> y que sabe <b>trabajar en grupo</b>.A
+              la hora del trabajo me gustan las cosas claras y ayudar a mis
+              compañeros a sacar el trabajo adelante.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut
+              assumenda commodi sequi odio voluptas voluptatum, ipsa quod
+              deleniti doloremque quo amet beatae rem laboriosam ipsum magnam ad
+              consequatur, saepe quibusdam?
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="aficiones">
+        <div class="container">
+          <h3><i class="fa-solid fa-music"></i> Aficiones</h3>
+          <table class="table table-hover table-success">
+            <thead>
+              <tr>
+                <td>Foto</td>
+                <td>Descripción</td>
+                <td>Enlace</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img src="img/EAFC24.jpg" id="ea" />
+                </td>
+                <td>
+                  <p>
+                    Desde FIFA 09 llevo jugando con mis amigos a esta saga y ha
+                    dia de hoy es más que una afición. Me encanta cada temporada
+                    abrir el FUT y empezar a ver hasta donde somos capaces de
+                    llegar mis amigos y yo
+                  </p>
+                </td>
+                <td>
+                  <a
+                    href="https://www.ea.com/es-es/games/ea-sports-fc"
+                    target="_blank"
+                    ><button type="button" name="botonEA" value="EAVisto">
+                      Ir a EA
+                    </button></a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="img/Valorant.png" id="valorant" />
+                </td>
+                <td>
+                  <p>
+                    Desde que un colega me descubrio este juego es adictivo y no
+                    podemos de dejar de jugar mis amigos y yo. Las partidas son
+                    rapidas y puedes perder o ganar las partidas en un abrir y
+                    cerrar los ojos por diversos aciertos o errores.
+                  </p>
+                </td>
+                <td>
+                  <a href="https://playvalorant.com/es-es/" target="_blank"
+                    ><button type="button" name="botonRiot" value="RiotVisto">
+                      Ir a Riot
+                    </button></a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="img/libro.jpeg" id="libro" />
+                </td>
+                <td>
+                  <p>
+                    Desde muy pequeño empece a leer libros de fantasias. A dia
+                    de hoy sigo leyendo sobre todo novela negra aunque tambien
+                    leo otros tipos de novela.
+                  </p>
+                </td>
+                <td>
+                  <a href="https://www.casadellibro.com/" target="_blank"
+                    ><button type="button" name="botonlibro" value="LibroVisto">
+                      Ir a Libros
+                    </button></a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td><img src="img/F1.jpg" id="f1" /></td>
+                <td>
+                  <p>
+                    Desde muy pequeño empece a ver la F1 con mi familia y a dia
+                    de hoy es mas que un hobbie ya que compito online con gente.
+                  </p>
+                </td>
+                <td>
+                  <a href="https://www.formula1.com/" target="_blank"
+                    ><button type="button" name="botonF1" value="F1Visto">
+                      Ir a F1
+                    </button></a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td><img src="img/RM.jpg" id="futbol" /></td>
+                <td>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Itaque odit est laboriosam amet maxime perspiciatis
+                    similique dicta quasi sint, nobis iste dolorum suscipit,
+                    commodi porro quod quis nihil tempora ipsum.
+                  </p>
+                </td>
+                <td>
+                  <a href="https://www.realmadrid.com/" target="_blank"
+                    ><button type="button" name="botonRM" value="RMVisto">
+                      Ir a RM
+                    </button></a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="ciudad">
+        <div class="container">
+          <h3><i class="fa-sharp fa-solid fa-map-location-dot"></i> Ciudades que he visitado</h3>
+          <ul>
+            <li><a href="https://es.wikipedia.org/wiki/Madrid">Madrid</a></li>
+            <li>
+              <a href="https://es.wikipedia.org/wiki/Barcelona">Barcelona</a>
+            </li>
+            <li>
+              <a href="https://es.wikipedia.org/wiki/C%C3%A1diz">Cadiz</a>
+            </li>
+            <li><a href="https://es.wikipedia.org/wiki/Huelva">Huelva</a></li>
+            <li>
+              <a href="https://es.wikipedia.org/wiki/Valencia">Valencia</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="enlacesInteres">
+        <div class="container enlacesInteres">
+          <h3><i class="fa-solid fa-face-smile-wink"></i> Enlaces de interes</h3>
+          <a href="https://www.linkedin.com/in/calventeramirez/"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/calventeramirez"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </section>
+      <section id="actividadReciente">
+        <div class="container">
+          <h3><i class="fa-solid fa-chart-line"></i> Actividades recientes</h3>
+          <table class="table table-info table-hover">
+            <thead>
+              <tr>
+                <th>Actividad</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cursos</td>
+                <td>
+                  He conseguido los cursos de OpenWebinars de HTML5, CSS3 y JS
+                </td>
+              </tr>
+              <tr>
+                <td>Informes</td>
+                <td>
+                  Se ha elaborado un informe avanzado para el TFG de una empresa
+                  junto a compañeros de equipos
+                </td>
+              </tr>
+              <tr>
+                <td>Lorem ipsum dolor</td>
+                <td>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugiat, quas iure. Itaque harum id minus, recusandae commodi
+                  fuga, dolore quaerat vitae debitis fugiat, eum ea qui quo
+                  exercitationem autem in?
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="imagenes">
+        <div class="container">
+          <h3><i class="fa-brands fa-envira"></i> Galeria</h3>
+          <div class="book">
+            <img src="img/Madrid.jpg" alt="Madrid ciudad" id = "madrid"/>
+            <input type="radio" name="fotos" />
+          </div>
+          <div class="book">
+            <img src="img/Barcelona.jpg" alt="Barcelona ciudad" id="barcelona"/>
+            <input type="radio" name="fotos" />
+          </div>
+          <div class="book">
+            <img src="img/Cadiz.jpg" alt="Cadiz ciudad" id="cadiz"/>
+            <input type="radio" name="fotos" />
+          </div>
+          <div class="book">
+            <img src="img/Huelva.jpeg" alt="Huelva ciudad" id="huelva" />
+            <input type="radio" name="fotos" />
+          </div>
+        </div>
+      </section>
+      <section id="infoAdicional">
+        <div class="container">
+          <h3><i class="fa-solid fa-info"></i> Información adicional</h3>
+          Cursos
+          <ul>
+            <li>Montaje y configuración de PC: UMA 2018</li>
+            <li>CCNA 4 version 6: CISCO 2020</li>
+            <li>Curso de HTML5 y CSS3: OpenWebinars</li>
+            <li>Curso JS basico: OpenWebinars</li>
+            <li>Curso JS avanzado: OpenWebinars</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>©Pablo Jesús Calvente Ramírez</p>
+      <p>pcr0015@alu.medac.es</p>
+    </footer>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
