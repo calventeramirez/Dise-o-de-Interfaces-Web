@@ -19,6 +19,10 @@ nav{
     background-color: #FA4528;
 }
 
+div{
+    margin-bottom: 5%;
+}
+
 /*Informacion*/
 .informacion-section{
     padding-left: 0%;
@@ -224,4 +228,5 @@ footer{
 footer p{
     color: black;
     text-align: center;
+    margin-bottom: 5%;
 }
