@@ -178,6 +178,7 @@ body{
 .proyectos-book{
     display: inline-block;
     vertical-align: top; /*necesario  para que la imagen se alinee arriba*/
+    min-width: 32%;
     max-width:  32%;
     padding: 10px;
     margin-bottom: 10%;
