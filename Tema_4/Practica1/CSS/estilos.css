@@ -15,9 +15,6 @@ body{
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
-nav{
-    background-color: #FA4528;
-}
 
 div{
     margin-bottom: 5%;
@@ -186,28 +183,11 @@ table button:hover{
 }
 
 /*Galeria*/
-
-.book{
-    display: inline-block;
-    vertical-align: top;
-    max-width: 32%;
-    padding: 10px;
-    margin-bottom: 10%;;
+h5{
+ 
+    color: #c40212;
+    font-size: 2.5em;
 }
-
-.book img{
-    width: 100%;
-}
-
-.book img:hover{
-    transform: scale(1.2);
-    transition: transform 0.5s ease-in-out;
-}
-
-.book img:not(:hover){
-    transform: scale(1);
-}
-
 /*Informacion adicional*/
 #infoAdicional ul li{
     list-style: none;
