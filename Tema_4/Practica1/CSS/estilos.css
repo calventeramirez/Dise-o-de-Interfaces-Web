@@ -15,12 +15,10 @@ body{
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
-nav{
-    background-color: #FA4528;
-}
 
 div{
     margin-bottom: 5%;
+    border-radius: 3%;
 }
 
 /*Informacion*/
@@ -173,6 +171,7 @@ table button:hover{
 /*Enlaces de interes*/
 
 .enlacesInteres a{
+    margin-top: 5%;
     display: inline-flex;
     text-decoration: none;
     color: #51A57F;
@@ -186,28 +185,11 @@ table button:hover{
 }
 
 /*Galeria*/
-
-.book{
-    display: inline-block;
-    vertical-align: top;
-    max-width: 32%;
-    padding: 10px;
-    margin-bottom: 10%;;
+h5{
+ 
+    color: #0D6EFD;
+    font-size: 2.5em;
 }
-
-.book img{
-    width: 100%;
-}
-
-.book img:hover{
-    transform: scale(1.2);
-    transition: transform 0.5s ease-in-out;
-}
-
-.book img:not(:hover){
-    transform: scale(1);
-}
-
 /*Informacion adicional*/
 #infoAdicional ul li{
     list-style: none;
@@ -217,8 +199,8 @@ table button:hover{
 footer{
     width: 100%;
     height: 80%;
-    background-color: #FA4528;
-    border-top: 35px solid #c40212;
+    background-color: #0467fce5;
+    border-top: 35px solid #0D6EFD;
     display: flex;
     align-items: center;
     justify-content: center;
