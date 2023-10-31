@@ -27,9 +27,10 @@ header{
 }
 
 aside{
-    width: 24.5%;
+    width: 25%;
     float: left;
     background-color: #ccc;
+    height: auto;
     min-height: 750px;
     text-align: center;
     line-height: 750px;
@@ -70,12 +71,84 @@ aside{
     }
 }
 
-@media(max-width: 1688px){
+@media(max-width: 1690px){
     #articles article{
-        width:46.1%;
+        width:45%;
         background-color: green;
+    }
+
+    aside{
+        height: 1105px;
+    }
+}
+
+@media(max-width: 1294px){
+    #articles article{
+        width:44%;
+        background-color: yellow;
+    }
+
+    aside{
+        height: 1105px;
+    }
+}
+
+@media(max-width: 1080px){
+    #articles article{
+        width:43%;
+        background-color: yellowgreen;
     }
     aside{
         height: 1105px;
+    }
+}
+
+
+@media(max-width: 925px){
+    #articles article{
+        width:41%;
+        background-color: yellowgreen;
+    }
+    aside{
+        height: 1105px;
+    }
+}
+
+@media(max-width: 850px){
+    aside h2{
+        font-size: 2.5vw;
+    }
+}
+
+@media(max-width: 810px){
+    #articles article{
+        width:40%;
+        background-color: yellowgreen;
+    } 
+}
+/*Vista Movil*/
+@media(max-width: 650px){
+    #container{
+        overflow: hidden;
+    }
+
+    #articles article{
+        width:40%;
+        background-color: blueviolet;
+        color: white;
+    }
+    #articles{
+        width: 100%;
+    }
+    aside{
+       float:none;
+       min-height: auto;
+       height: 40px;
+       line-height: 20px;
+       width: 100%;
+       padding: 20px;
+    }
+    aside h2{
+        font-size: 24px;
     }
 }
