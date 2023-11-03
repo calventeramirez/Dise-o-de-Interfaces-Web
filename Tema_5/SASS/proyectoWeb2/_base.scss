@@ -19,3 +19,61 @@
     font-weight: normal;
     font-style: normal;
 }
+
+//Variables Globales
+$fontTebuchet: "TrebuchetMS";
+$fontBebas: "BebasNeue";
+$fontSymbols: "WebSymbolsRegular";
+$colorPrincipal: #37bcf9;
+
+//Estilos Generales
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: url("img/pattern.png");
+}
+
+//Wrap - Marco general
+.wrap{
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.gear, .icon{
+    font-family: $fontSymbols;
+}
+
+//Cabecera
+header{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    font-family: $fontBebas;
+    color: white;
+}
+
+#logo{
+    float: left;
+    width: 200px;
+    height: 50px;
+    background-color: $colorPrincipal;
+    text-align: center;
+    margin-top: 8px;
+    margin-left: 20px;
+    letter-spacing: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 500ms;
+}
+
+#logo h3{
+    display: block;
+    float: right;
+    font-size: 40px;
+    margin-top: 5px;
+    margin-right: 65px;
+    transition: all 500ms;
+}
