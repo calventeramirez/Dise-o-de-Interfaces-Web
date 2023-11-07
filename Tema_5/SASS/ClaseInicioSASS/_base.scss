@@ -18,6 +18,14 @@ p{
     font-family:  $fuente-tipica2;
 }
 
+//variables como selectores
+$b: 'body';
+#{'$'}b{
+    ///Variables CSS
+    --bg-color: lightblue;
+    background-color: var(--bg-color);
+}
+
 /*Uso de anidación*/
 .caja{
     border: 1px solid black;
