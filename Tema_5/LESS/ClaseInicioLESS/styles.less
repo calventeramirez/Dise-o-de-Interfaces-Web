@@ -1,0 +1,115 @@
+//Variables
+@bgcolor: #37bcf9;
+@bgcolorCajas:#031fa8;
+@fuente-tipica: sans-serif, Helvetica, Arial;
+@fuente-tipica2: Arial, Helvetica;
+@color-letra: #ccc;
+
+//variables usadas como selectores
+@b: body;
+
+@{b}{
+    ///Variables CSS
+    --bg-color: lightblue;
+    background-color: var(--bg-color);
+}
+
+h1{
+    font-family: @fuente-tipica2;
+    color:black;
+}
+p{
+    color:yellow;
+}
+//Uso de anidacion
+.caja{
+    border:1px solid black;
+    margin: 0 auto;
+    text-align: center;
+    background-color: @bgcolorCajas;
+    padding: 10px;
+    h2{
+        color: @color-letra;
+    }
+    p{
+        color: green;
+    }
+    .info{
+        font-size: 14px;
+        .autor{
+            font-size: 18px;
+            color:@color-letra;
+        }
+    }
+}
+
+//Uso de mixins-Funciones
+.sombra(){
+    box-shadow: 0 0 10px black;
+    text-shadow: 0 0 5px black;
+}
+
+.sombrasParam(@size1, @size2, @color1, @color2){
+    box-shadow: 0 0 @size1 @color1;
+    text-shadow: 0 0 @size2 @color2;
+}
+
+.caja{
+    .sombra();
+}
+
+.caja2{
+    .sombrasParam(5px, 10px, blue, gray);
+}
+
+//Operadores
+h3{
+    font-size: 20px + 5px - 1px;
+}
+
+//Condicionales - se define como los mixins-funciones
+.textoNegro(@value) when (@value = true){
+    color: black;
+    & when (@value = false){
+        color: green;
+    }
+}
+
+h1{
+    color: blue;
+    .textoNegro(false);
+    // .textoNegro(true);
+}
+
+//Bucles
+.loop(@cont) when (@cont > 0){
+    .loop(@cont - 1);
+    height: (900px / @cont);
+}
+
+.caja3{
+    border: 1px solid black;
+    height: 700px;
+    .loop(5);
+}
+
+// rejilla en el que el ancho total es fijo y le añadimos un margen proporcional al tamaño total.
+.crear-grid-fijo(@ancho; @columnas; @i: 1) when (@i =< @columnas) {
+    .col-f-@{i} {
+      width: ((@i / @columnas) * @ancho) - ((@ancho / @columnas) * 0.1);
+      margin-left: (@ancho / @columnas) * 0.05;
+      margin-right:(@ancho / @columnas) * 0.05;
+    }
+  
+    .crear-grid-fijo(@ancho; @columnas; (@i + 1));
+  }  
+  
+ .crear-grid-fijo(1200px, 6);
+
+ .grid-ancho-fijo{
+    border: 1px solid black;
+ }
+
+ .fila{
+    border: 1px solid black;
+ }
