@@ -63,10 +63,14 @@ header{
     text-align: center;
     margin-top: 8px;
     margin-left: 20px;
-    letter-spacing: 20px;
+    letter-spacing: 1px;
     cursor: pointer;
     overflow: hidden;
     transition: all 500ms;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
 }
 
 #logo h3{
@@ -76,5 +80,72 @@ header{
     margin-top: 5px;
     margin-right: 65px;
     transition: all 500ms;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
 }
 
+#logo:hover{
+    animation: desdeDerecha 500ms linear;
+    -webkit-animation: desdeDerecha 500ms linear;
+}
+
+@keyframes desdeDerecha {
+    from
+    {
+        transform: translateX(200%); /*Desaparece*/
+        -webkit-transform: translateX(200%);
+        -moz-transform: translateX(200%);
+        -ms-transform: translateX(200%);
+        -o-transform: translateX(200%);
+    }
+    to 
+    {
+        transform: translateX(0%); /*Vuelve*/
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+}
+
+#logo:hover{
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    color: black;
+    background-color: #ccc;
+}
+
+#logo .gear {
+    display: block;
+    float:left;
+    font-size: 30px;
+    margin-top: 8px;
+    margin-left: 26px;
+    /*Animación para la rueda*/
+    animation-name: rotar-rueda;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotar-rueda{
+    from{
+        transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+        -moz-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -o-transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);
+        -moz-transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+        -o-transform: rotateZ(360deg);
+    }
+}
