@@ -162,3 +162,81 @@
     height: 50px;
     font-size: 14px;
 }
+
+#cajaAnimada{
+    margin-top: 30px;
+    width: 150px;
+    height: 150px;
+    background: lightgrey;
+    color: black;
+    border: 5px solid black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 200px;
+    animation-name: desplazamiento;
+    animation-duration: 20s;
+    /*Si quieres que sea continuo o que pare*/
+    animation-iteration-count: infinite;
+    /*para que vaya todo el rato a la misma velocidad. Por defecto realiza varias velocidades*/
+    animation-timing-function: linear;
+}
+
+@keyframes desplazamiento {
+    /* from{
+        margin-left: 0;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    to{
+        margin-left: 1030%;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        border-radius: 999px;
+        -webkit-border-radius: 999px;
+        -moz-border-radius: 999px;
+        -ms-border-radius: 999px;
+        -o-border-radius: 999px;
+} */
+    0%{
+        margin-left: 0;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    30%{
+        margin-left: 1030px;
+        transform: rotate(360deg);
+        -webkit-transform: rotate();
+        -moz-transform: rotate();
+        -ms-transform: rotate();
+        -o-transform: rotate();
+        border-radius: 200px;
+        -webkit-border-radius: 200px;
+        -moz-border-radius: 200px;
+        -ms-border-radius: 200px;
+        -o-border-radius: 200px;
+    }
+    80%{
+        margin-left: 1030px;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        border-radius: 999px;
+        background-color: red;
+    }   
+    100%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }   
+
+}
