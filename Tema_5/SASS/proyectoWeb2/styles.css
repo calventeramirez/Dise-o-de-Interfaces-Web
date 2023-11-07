@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "TrebuchetMS";
+  src: url("fonts/TrebuchetMS.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BebasNeue";
+  src: url("fonts/BebasNeue.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "WebSymbolsRegular";
+  src: url("fonts/websymbols-regular-webfont.eot");
+  src: url("fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/websymbols-regular-webfont.woff") format("woff"), url("fonts/websymbols-regular-webfont.ttf") format("truetype"), url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: url("img/pattern.png");
+}
+
+.wrap {
+  width: 1250px;
+  margin: 0 auto;
+}
+
+.gear, .icon {
+  font-family: "WebSymbolsRegular";
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  font-family: "BebasNeue";
+  color: white;
+}
+
+#logo {
+  float: left;
+  width: 200px;
+  height: 50px;
+  background-color: #37bcf9;
+  text-align: center;
+  margin-top: 8px;
+  margin-left: 20px;
+  letter-spacing: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 500ms;
+}
+
+#logo h3 {
+  display: block;
+  float: right;
+  font-size: 40px;
+  margin-top: 5px;
+  margin-right: 65px;
+  transition: all 500ms;
+}/*# sourceMappingURL=styles.css.map */
