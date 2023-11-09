@@ -280,4 +280,20 @@
         flex-basis: 100%;
         text-align: center;
     }
+    #content{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #lateral{
+        margin-right: 0;
+    }
+    #lateral ul{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
 }
