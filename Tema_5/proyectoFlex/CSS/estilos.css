@@ -256,7 +256,7 @@
     }
 }
 
-@media (max-width: 535px){
+@media (max-width: 540px){
     #logo{
         flex-basis: 5%;
     }
@@ -267,5 +267,17 @@
 
 /*Version movil*/
 @media(max-width: 480px){
-    
+    #footer .logoFooter{
+        flex-grow: 1;
+        order: 1;
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    #footer .info{
+        flex-grow: 1;
+        order: 2;
+        flex-basis: 100%;
+        text-align: center;
+    }
 }
