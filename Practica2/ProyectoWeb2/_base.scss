@@ -289,8 +289,14 @@ body{
 }
 
 /* Tarjetas */
+#cards{
+    display:flex;
+}
+
 .card{
-    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: 200px;
     height: 260px;
     border: 1px solid #ccc;
@@ -314,7 +320,9 @@ body{
 }
 
 .card .icon{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 110px;
     font-size: 50px;
@@ -346,6 +354,9 @@ body{
 }
 
 .card .category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 50px;
     font-family: $fontTrebuchet;
@@ -414,21 +425,22 @@ body{
     }
 }
 
-.clearfix{
-    float: none;
-    clear: both;
-}
+
 
 /* Barra lateral */
 #lateral{
     width: 300px;
     min-height: 1070px;
     font-family: $fontTrebuchet;
-    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 20px;
 }
 #lateral h3{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: auto;
     height: 45px;
     line-height: 49px;
@@ -540,7 +552,9 @@ body{
 #login input[type="reset"],
 #login button{
     /*display: block;
-    */float: left;
+    */display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     width: 100px;
     height: 35px;
@@ -631,7 +645,9 @@ body{
 
 /* Artículos */
 #articles{
-    float: left; /* es necesario flotarlo puesto que he incluido el div clearfix*/
+    display: flex; /* es necesario flotarlo puesto que he incluido el div clearfix*/
+    flex-direction: column;
+    align-items: center;
     width: 860px;
 }
 
@@ -679,7 +695,9 @@ body{
 }
 
 #articles .datos{
-    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: black;
     color: white;
     height: 30px;
@@ -758,8 +776,15 @@ body{
     color: white;
     overflow: hidden;
 }
+
+#footer .wrap{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
 #footer .wrap > div{
-    float: left;
     width: 25%;
     height: 370px;
     margin: 40px;
