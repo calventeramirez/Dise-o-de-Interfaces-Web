@@ -214,7 +214,7 @@ body {
   height: 100px;
   border: 10px solid white;
   box-shadow: 0px 0px 2px gray;
-  background: url("../img/bakbaner.png");
+  background: url("img/bakbaner.png");
   background-position: -200px -200px;
   margin: 20px auto;
   animation: banner 10s linear;
@@ -426,6 +426,8 @@ body {
 }
 /* Barra lateral */
 #lateral {
+  display: flex;
+  flex-direction: column;
   width: 300px;
   min-height: 1070px;
   font-family: "TrebuchetMS";
@@ -442,7 +444,7 @@ body {
   width: auto;
   height: 45px;
   line-height: 49px;
-  background: url("../img/pxgray.png"), white;
+  background: url("img/pxgray.png"), white;
   /*    box-shadow: 0px 1px 0px black, 1px 2px 0px black, 2px 3px 0px black, 3px 4px 0px black; */
   box-shadow: 0px 1px 0px black, 1px 2px 0px black, 2px 3px 0px black, 3px 4px 0px black;
   font-size: 30px;

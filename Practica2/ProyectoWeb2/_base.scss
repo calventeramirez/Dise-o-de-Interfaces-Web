@@ -226,7 +226,7 @@ body{
     height: 100px;
     border: 10px solid white;
     box-shadow: 0px 0px 2px gray;
-    background: url("../img/bakbaner.png");
+    background: url("img/bakbaner.png");
     background-position: -200px -200px;
     margin: 20px auto;
     animation: banner 10s linear;
@@ -429,6 +429,8 @@ body{
 
 /* Barra lateral */
 #lateral{
+    display:flex;
+    flex-direction: column;
     width: 300px;
     min-height: 1070px;
     font-family: $fontTrebuchet;
@@ -444,7 +446,7 @@ body{
     width: auto;
     height: 45px;
     line-height: 49px;
-    background: url("../img/pxgray.png"), white;
+    background: url("img/pxgray.png"), white;
     @include sombraCajaLineal(0px, 1px, 0px, black);
     font-size: 30px;
     font-family: $fontBebas;
