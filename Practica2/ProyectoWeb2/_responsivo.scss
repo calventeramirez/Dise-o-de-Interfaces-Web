@@ -49,6 +49,9 @@
 
 }
 @media (max-width: 969px){
+    #footer .wrap{
+        width: 95%;
+    }
 
 }
 @media (max-width: 920px){
@@ -90,16 +93,32 @@
         margin-bottom: 10px;
         margin-right: 10px;
     }
+    #footer .wrap{
+        width: 80%;
+        margin-left: 5%;
+    }
+    #footer h5{
+        font-size: 2.5vw;
+    }
+    #footer img{
+        width: 90%;
+    }
 }
 
-@media (max-width: 890px){
-
+@media (max-width: 850px){
+    #lateral h3{
+        font-size: 29px;
+    }
 }
 
 
 /* movemos ya el menú y cambiamos estructura */
-@media (max-width: 800px){
-
+@media (max-width: 824px){
+    #lateral h3 {
+        font-size: 1em;
+    }
+    
+    
 }
 /* Visionado para Móviles */
 @media (max-width: 660px){
