@@ -132,7 +132,7 @@ body{
 
 #logo .gear{
     display: flex;
-    justify-content: flex-start;
+    flex-wrap: wrap;
     font-size: 30px;
     margin-top: 8px;
     margin-left: 26px;
@@ -442,6 +442,7 @@ body{
     justify-content: center;
     align-items: center;
     margin: 20px;
+    order:1;
 }
 #lateral h3{
     display: flex;
@@ -787,6 +788,7 @@ body{
     padding: 20px;
     background-color: white;
     box-shadow: 1px 1px 2px #ddd;
+    order:0;
 }
 /* FOOTER */
 #footer{
