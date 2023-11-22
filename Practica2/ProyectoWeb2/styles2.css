@@ -1,0 +1,18 @@
+.grid-main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    background: url("img/background.png");
+}
+
+.grid-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 0 auto;
+}
+
+.tabla{
+   grid-column: 2;
+   grid-row: 2;
+}

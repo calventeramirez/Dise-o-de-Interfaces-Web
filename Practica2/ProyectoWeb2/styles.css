@@ -123,6 +123,8 @@ body {
   font-size: 30px;
   margin-top: 8px;
   margin-left: 26px;
+  margin-right: 10px;
+  margin-bottom: 4px;
   /* Animación para la Rueda */
   animation-name: rotar-rueda;
   animation-duration: 4s;
@@ -435,10 +437,10 @@ body {
   width: 300px;
   min-height: 1070px;
   font-family: "TrebuchetMS";
-  display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 20px;
+  align-items: stretch;
+  margin-top: 0;
+  margin-left: 50px;
   order: 1;
 }
 
