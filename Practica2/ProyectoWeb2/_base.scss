@@ -442,7 +442,7 @@ body{
     font-family: $fontTrebuchet;
     justify-content: center;
     align-items: stretch;
-    margin-top: 0;
+    margin-top: -180px;
     margin-left: 50px;
     order:1;
 }
@@ -522,8 +522,8 @@ body{
     box-shadow: 0px 0px 1px $colorGrisClaro, 0px 3px 7px $colorGrisClaro, 0px 1px white inset, 0px -3px 2px $colorGrisClaro inset;
 }
 
-#login{
-    height: 300px;
+.boton{
+    display:flex;
 }
 
 #login input[type="email"],
