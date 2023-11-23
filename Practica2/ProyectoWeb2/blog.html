@@ -26,6 +26,7 @@
       </nav>
     </header>
     <!-- fin de la Cabecera -->
+    <div class="grid-general">
     <main class="grid-main">
       <div class="grid-card">
         <div class="card" style="width: 18rem">
@@ -77,7 +78,7 @@
         </div>
         <div class="tabla">
           <table class="table table-info">
-            <tr class="table table">
+            <tr class="table table-secondary">
               <th>Navegador</th>
               <th>Desarrollador</th>
               <th>Version</th>
@@ -99,10 +100,81 @@
             </tr>
           </table>
         </div>
+        <section id ="blog">
+          <h2>Zona de blog</h2>
+          <article>
+            <h3>Blog 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptatum, quibusdam, quia, quae voluptates voluptatem
+              consequatur quod voluptas quos doloribus quidem. Quisquam
+              voluptatum, quibusdam, quia, quae voluptates voluptatem
+              consequatur quod voluptas quos doloribus quidem.
+            </p>
+          </article>
+          <article>
+            <h3>Blog 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptatum, quibusdam, quia, quae voluptates voluptatem
+              consequatur quod voluptas quos doloribus quidem. Quisquam
+              voluptatum, quibusdam, quia, quae voluptates voluptatem
+              consequatur quod voluptas quos doloribus quidem.
+            </p>
+          </article>
+          <article>
+            <h3>Blog 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptatum, quibusdam, quia, quae voluptates voluptatem
+              consequatur quod voluptas quos doloribus quidem. Quisquam
+              voluptatum, quibusdam, quia, quae voluptates voluptatem
+              consequatur quod voluptas quos doloribus quidem.
+            </p> 
+            <video src="video/playa.mp4" preload="metadata" controls></video>
+          </article>
+          <article>
+            <h3>Blog 4</h3>
+            <p>
+              <!-- Audio -->
+              <!-- Obra: Luces de Neón
+              Música de https://www.fiftysounds.com/es/ -->
+              <audio src="audio/Neon Lights.mp3" controls></audio>
+              <!-- Fin del audio -->
+            </p>
+          </article>
+        </section>
       </div>
     </main>
-    <aside>
-        
+    <aside class="lateral">
+      <h3 id="h3login">LOGIN</h3>
+          <div id="login" class="caja-lateral">
+            <form>
+              <label id="user" class="icon">U</label>
+              <input type="email" />
+              <label id="password" class="icon">w</label>
+              <input type="password" />
+              <input type="submit" value="Entrar" />
+              <input type="reset" value="Limpiar" />
+              <a href="#">Regístrate aquí</a>
+              <a href="#">Has olvidado tu contraseña?</a>
+            </form>
+          </div>
+      <h3 id="h3redes">REDES SOCIALES</h3>
+      <div id="social" class="caja-lateral">
+        <div class="twitter">
+          <a href="#" class="icon">t</a>
+          <p class="overlay">Twitter</p>
+        </div>
+        <div class="facebook">
+          <a href="#" class="icon">f</a>
+          <p class="overlay">Facebook</p>
+        </div>
+        <div class="youtube">
+          <a href="#" class="icon">y</a>
+          <p class="overlay">Youtube</p>
+        </div>
+      </div>
     </aside>
     <footer id="footer">
       <h5>AUTOR</h5>
