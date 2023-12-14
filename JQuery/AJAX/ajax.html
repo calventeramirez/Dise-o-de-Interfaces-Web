@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="JS/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="JS/05-ajax.js"></script>
+    <style>
+        #datos{
+            border: 2px solid gray;
+            width: 250px;
+            height: 250px;
+            overflow: scroll;
+        }
+        #datos2{
+            border: 2px solid gray;
+            width: 250px;
+            height: 250px;
+            overflow: scroll;
+        }
+    </style>
+    <title>JQuery - AJAX</title>
+</head>
+<body>
+    <h1>JQuery - AJAX</h1>
+    <div id="datos">Info.</div>
+    <div id="datos2">Info.</div>
+    <br><br>
+    <form action="https://reqres.in/api/users" method="POST" id="formulario">
+        Nombre: <input type="text" name="name">
+        <br>
+        Web: <input type="text" name="web">
+        <br>
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>
