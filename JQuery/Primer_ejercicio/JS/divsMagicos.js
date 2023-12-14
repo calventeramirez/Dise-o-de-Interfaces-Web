@@ -13,16 +13,10 @@ $(document).ready(function(){
 
     caja2.click(function(){
         caja2.animate({
-            marginLeft: '50px',
-            marginTop: "100px",
-            width: "200px",
-            height: "200px"
-        }, "slow")
-        caja2.animate({
             marginLeft: '150px',
             marginTop: "150px",
             width: "250px",
             height: "250px"
-        }, "slow")
+        }, 2000)
     });
 });
