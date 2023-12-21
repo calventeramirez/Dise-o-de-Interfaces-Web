@@ -1,0 +1,18 @@
+body{
+    background: url('../img/rojo.jpg');
+    /* permite que no se acabe la imagen en ningún momento. */
+    background-attachment: fixed;
+}
+
+#logo{
+    background-color: red;
+}
+
+#menu ul li:hover{
+    background-color: red;
+}
+
+.leerMas{
+    background-color: red;
+    color:white;
+}

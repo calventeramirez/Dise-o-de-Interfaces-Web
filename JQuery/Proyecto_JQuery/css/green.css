@@ -1,0 +1,18 @@
+body{
+    background: url('../img/hojas.jpg');
+    /* permite que no se acabe la imagen en ningún momento. */
+    background-attachment: fixed;
+}
+
+#logo{
+    background-color: darkolivegreen;
+}
+
+#menu ul li:hover{
+    background-color: darkolivegreen;
+}
+
+.leerMas{
+    background-color: darkolivegreen;
+    color:white;
+}
