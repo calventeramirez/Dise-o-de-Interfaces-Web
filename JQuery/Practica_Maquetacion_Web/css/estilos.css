@@ -62,7 +62,23 @@ form, input, select, textarea, button, label{
     --color-border-reviews: #E5E6E7;
     --color-company: #A5A6A7;
 }
+@media (prefers-color-scheme: dark){
+    :root{
+        --color-principal: #000000;
+        --color-secondary: #023441;
 
+        --color-background: #535758;
+        --color-transparent: transparent;
+
+        --color-icons: #3f4041;
+        --color-title: #ece9e9;
+        --color-subtitle: #e4e4e4;
+        --color-text: #d3d1d1;
+
+        --color-border-reviews: #525353;
+        --color-company: #505152;
+    }
+}
 /* Estilos Generales */
 html{
     font-size: 10px;
@@ -1353,4 +1369,58 @@ body{
 .contact__iframe{
     width: 100%;
     height: 15rem;
+}
+
+.switchBtn {
+    position: relative;
+    display: inline-block;
+    width: 110px;
+    height: 34px;
+    margin: 0 auto;
+}
+.switchBtn input {display:none;}
+.slide {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    color:black;
+    -webkit-transition: .4s;
+    transition: .4s;
+    padding: 8px;
+}
+.slide:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 78px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slide {
+    background-color: #000000;
+    color: white;
+    padding-left: 40px;
+}
+input:focus + .slide {
+    box-shadow: 0 0 1px #01aeed;
+    
+}
+input:checked + .slide:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    left: -20px;
+}
+.slide.round {
+    border-radius: 34px;
+}
+.slide.round:before {
+    border-radius: 50%;
 }
