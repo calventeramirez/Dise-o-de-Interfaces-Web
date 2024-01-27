@@ -11,10 +11,14 @@
     <link rel="stylesheet" href="fonts/poppins/poppins.css">
     <link rel="stylesheet" href="css/scroll.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/responsive.css">    
+    <link rel="stylesheet" href="css/responsive.css">  
+    <link href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" rel="stylesheet" />
+    <!-- scripts -->
+    <script src="js/jquery-3.7.1.js"></script>  
     <script src="js/jquery-ui.js"></script>
-    <script src="js/jquery-3.7.1.js"></script>
     <script src="js/toogle.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/slidder.js"></script>
     <title>Maquetación Proyecto CV</title>
 </head>
 <body>
@@ -31,6 +35,13 @@
                     </div>
                     <h2 class="user-info__name">Pablo Jesús Calvente Ramírez</h2>
                     <h4 class="user-info__job">Alumno - Desarrollador Web</h4>
+                      <!-- Toggle con el cambio oscuro claro -->
+                    <label class="ui-switch">
+                        <input type="checkbox">
+                        <div class="slider">
+                        <div class="circle"></div>
+                        </div>
+                    </label>  
                 </div>
                 <!-- menú de navegación -->
                 <nav class="layout__menu">
@@ -97,7 +108,7 @@
 
                 <!-- botón del curriculum -->
                 <div class="user-info__buttons">
-                    <a href="#" class="user-info__btn">Descargar CV</a>
+                    <a href="pdf/CV.pdf" class="user-info__btn">Descargar CV</a>
                 </div>
 
                 <!-- pié de página -->
@@ -113,6 +124,12 @@
                 <header class="blog__header">
                     <h1 class="blog__title">BLOG</h1>
                 </header>
+                <div class="slider-1">
+                    <img src="img/01-inicio.png" />
+                    <img src="img/articulo-1.jpg" />
+                    <img src="img/articulo-4.jpg" />
+                </div>
+                <br>
                 <section class="blog__articles">
                     <article class="articles__article">
                         <div class="article__top">
@@ -205,13 +222,7 @@
                 </section>
                 
             </section>
-            <!-- Toggle con el cambio oscuro claro -->
-            <label class="ui-switch">
-                <input type="checkbox">
-                <div class="slider">
-                  <div class="circle"></div>
-                </div>
-              </label>   
+           
         </main>
     </div>
 </body>
