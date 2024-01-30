@@ -3,6 +3,7 @@ import './App.css';
 import { PrimerComponente } from './componentes/PrimerComponente';
 import { SegundoComponente } from './componentes/SegundoComponente';
 import TercerComponente from './componentes/TercerComponente';
+import { AjaxComponent } from './componentes/AjaxComponent';
 
 function App() {
   const ficha_deportiva = {
@@ -26,6 +27,8 @@ function App() {
       <SegundoComponente></SegundoComponente>
       
       <TercerComponente  year = {anio}></TercerComponente>
+
+      <AjaxComponent></AjaxComponent>
     </div>
   );
 }

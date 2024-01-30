@@ -38,7 +38,7 @@ export const AjaxComponent = () => {
 
     useEffect(()=>{
         getUsuariosEstaticos();
-    }, [usuarios]);//con [] le indico que se cargue unicamente cuando la carga inicial del componente
+    }, []);//con [] le indico que se cargue unicamente cuando la carga inicial del componente
     
 
     return (
@@ -48,7 +48,13 @@ export const AjaxComponent = () => {
         {/* Aqui ira nuestra peticion Ajax mediante: promesa o bien mediante async await */}
         <ol className='usuarios'>
             {
-
+                usuarios.map(usuario => {
+                    return  (<li key={usuario.id}>
+                            <img src={usuario.avatar} width="25"/> &nbsp; &nbsp;
+                            {usuario.first_name} {usuario.last_name}
+                        </li>);
+                            
+                })
             }
         </ol>
     </div>
