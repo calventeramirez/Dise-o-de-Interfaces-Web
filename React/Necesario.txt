@@ -9,3 +9,6 @@ Para crear un proyecto vamos a poder realizarlo en:
 
 Crear un proyecto:
 npx create-react-app {Nombre carpeta sin Capitalice}
+
+Lanzar proyecto
+npm start
