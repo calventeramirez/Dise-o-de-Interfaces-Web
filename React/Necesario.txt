@@ -7,8 +7,17 @@ Para crear un proyecto vamos a poder realizarlo en:
 1o Create React App
 2o Vite
 
+React APP
 Crear un proyecto:
 npx create-react-app {Nombre carpeta sin Capitalice}
 
 Lanzar proyecto
 npm start
+
+
+VITE
+Crear proyecto
+npm create vite@latest
+
+lanzar el proyecto
+npn start
