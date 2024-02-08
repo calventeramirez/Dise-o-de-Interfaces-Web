@@ -22,12 +22,13 @@
 /* Variables globales */
 /* Estilos Generales */
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background: url("../img/pattern.png");
+  padding-left: 12%;
 }
 
 /* wrap - Marco general */
@@ -35,7 +36,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 1250px;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .gear, .icon {
@@ -439,7 +440,7 @@ body {
   font-family: "TrebuchetMS";
   justify-content: center;
   align-items: stretch;
-  margin-top: -180px;
+  margin-top: 0;
   margin-left: 50px;
   order: 1;
 }
@@ -667,6 +668,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 860px;
+  margin-top: -750px;
 }
 
 #articles h2 {
