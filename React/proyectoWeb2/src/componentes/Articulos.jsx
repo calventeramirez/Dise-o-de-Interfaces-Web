@@ -8,8 +8,7 @@ export default function Articulos() {
       fetch("https://fakestoreapi.com/products/")
         .then(respuesta => respuesta.json())
         .then(resultado_final =>{
-          setArticulos(resultado_final.data);
-          console.log(resultado_final);
+          setArticulos(resultado_final);
         });
   }
 

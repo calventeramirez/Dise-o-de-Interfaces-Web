@@ -668,7 +668,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 860px;
-  margin-top: -750px;
+  margin-top: 0;
 }
 
 #articles h2 {
