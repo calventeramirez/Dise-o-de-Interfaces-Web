@@ -52,6 +52,7 @@ body {
   background-color: black;
   font-family: "BebasNeue";
   color: white;
+  margin-left: 20px;
 }
 
 #logo {
@@ -227,6 +228,8 @@ body {
   animation: banner 10s linear;
   -webkit-animation: banner 10s linear;
   animation-iteration-count: infinite;
+  overflow: hidden;
+  margin-left: 45px;
 }
 
 @keyframes banner {
@@ -290,6 +293,7 @@ body {
 /* Tarjetas */
 #cards {
   display: flex;
+  margin-left: 3%;
 }
 
 .card {
@@ -440,7 +444,6 @@ body {
   font-family: "TrebuchetMS";
   justify-content: center;
   align-items: stretch;
-  margin-top: 0;
   margin-left: 50px;
   order: 1;
 }
@@ -622,7 +625,7 @@ body {
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 #social .overlay {
@@ -824,6 +827,8 @@ body {
   background-color: black;
   color: white;
   overflow: hidden;
+  padding-left: 1.75%;
+  padding-right: 1.75%;
 }
 
 #footer .wrap {

@@ -8,18 +8,18 @@ export default function Articulos() {
       fetch("https://fakestoreapi.com/products/")
         .then(respuesta => respuesta.json())
         .then(resultado_final =>{
-          setArticulos(resultado_final);
+          setArticulos(resultado_final.slice(0, 5));
         });
   }
 
   useEffect (()=>{
     getArticulos();
   }, []); //Cado cargo el componente
-
+  
   return (
     <section id="articles">
         <h2>Últimos artículos</h2>
-        {articulos && articulos.map((articulo) => (
+        {articulos  && articulos.map((articulo) => (
           <article key={articulo.id}>
             <div className="datos">
               <span>Fecha: 01 de enero</span>
@@ -32,7 +32,7 @@ export default function Articulos() {
               {articulo.description}
             </p>
           </article>
-        ))}
+        ) )}
     </section>
   )
 }
