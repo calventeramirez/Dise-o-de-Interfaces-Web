@@ -1,28 +1,39 @@
+import { useEffect, useState } from 'react'
+
 export default function Articulos() {
+  const [articulos, setArticulos] = useState([]);
+
+  //Funcion para rellenar el array de articulos
+  const  getArticulos = () =>{
+      fetch("https://fakestoreapi.com/products/")
+        .then(respuesta => respuesta.json())
+        .then(resultado_final =>{
+          setArticulos(resultado_final.data);
+          console.log(resultado_final);
+        });
+  }
+
+  useEffect (()=>{
+    getArticulos();
+  }, []); //Cado cargo el componente
+
   return (
     <section id="articles">
         <h2>Últimos artículos</h2>
-        <article>
+        {articulos && articulos.map((articulo) => (
+          <article key={articulo.id}>
             <div className="datos">
               <span>Fecha: 01 de enero</span>
-              <span>Categoría: Pruebas</span>
+              <span>Categoría:{articulo.category}</span>
             </div>
             <h4>
-              <a href="#">Título de artículo 1</a>
+              {articulo.title}
             </h4>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit,
-              dolores. Consequatur quis tenetur, modi quod quam repellat facilis
-              minus molestias dicta eum ex voluptatibus itaque necessitatibus,
-              possimus quas? Fugiat, veritatis!
-            </p>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit,
-              dolores. Consequatur quis tenetur, modi quod quam repellat facilis
-              minus molestias dicta eum ex voluptatibus itaque necessitatibus,
-              possimus quas? Fugiat, veritatis!
+              {articulo.description}
             </p>
           </article>
+        ))}
     </section>
   )
 }

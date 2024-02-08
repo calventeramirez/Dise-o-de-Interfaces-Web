@@ -5,6 +5,9 @@ import Footer from '../componentes/Footer';
 import Banner from '../componentes/Banner';
 import Tarjetas from '../componentes/Tarjetas';
 import BarraLateral from '../componentes/BarraLateral';
+import Proyectos from '../componentes/Proyectos';
+import Formacion from '../componentes/Formacion';
+import Contacto from '../componentes/Contacto';
 
 
 export default function RouterPrincipal() {
@@ -22,6 +25,9 @@ export default function RouterPrincipal() {
           <BarraLateral />
           <Routes>
             <Route path="/" element={<Articulos />}></Route>
+            <Route path="/blog" element={<Proyectos />}></Route>
+            <Route path="/formacion" element={<Formacion />}></Route>
+            <Route path="/contacto" element={<Contacto />}></Route>
             <Route path="*" element={(
               <>
                 <h1>Error 404</h1>

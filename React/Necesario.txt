@@ -17,7 +17,7 @@ npm start
 
 VITE
 Crear proyecto
-npm create vite@latest
+npm create vite
 
 lanzar el proyecto
 npn run dev

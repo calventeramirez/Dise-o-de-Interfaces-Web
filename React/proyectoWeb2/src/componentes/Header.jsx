@@ -8,10 +8,10 @@ export default function Header() {
         </div>
         <nav id="menu">
           <ul>
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="blog.html">BLOG/PROYECTOS</a></li>
-            <li><a href="#">FORMACIÓN</a></li>
-            <li><a href="#">CONTACTO</a></li>
+            <li><a href="/">INICIO</a></li>
+            <li><a href="/blog">BLOG/PROYECTOS</a></li>
+            <li><a href="/formacion">FORMACIÓN</a></li>
+            <li><a href="/contacto">CONTACTO</a></li>
           </ul>
         </nav>
       </div>
